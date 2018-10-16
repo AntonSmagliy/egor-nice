@@ -18,4 +18,14 @@
   max-width: 1220px;
   margin: 0 auto; }
 
-/*# sourceMappingURL=style.css.map */
+footer {
+  background-color: black; }
+  footer .bot-line {
+    width: 100%; }
+    footer .bot-line .copyright {
+      width: 241px; }
+      footer .bot-line .copyright p {
+        color: #909090;
+        font-family: "Segoe UI", sans-serif;
+        font-size: 14px;
+        font-weight: 400; }
