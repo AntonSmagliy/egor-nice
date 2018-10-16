@@ -16,12 +16,47 @@
 
 
 body
+	background-color: #ebebeb
 p
 	margin: 0
+*
+	outline: none
+.clearfix::after 
+	content: ""
+	clear: both
+	display: table
+
 .container
 	width: 90%
 	max-width: 1220px
 	margin: 0 auto
+h1
+	margin: 0
+	padding: 0
+// .slick-prev:before, .slick-next:before 
+// 	content: '/f053'
+// 	font-size: 70px
+// 	color: #00569C
+// 	left: -100px
+// 	top: -13px
+// 	background: red
+// 	position: absolute
+
+.sliders
+	overflow-x: hidden
+	i
+		position: absolute
+		bottom: 50px
+		left: 50%
+		z-index: 999
+		transform: translate(-50%)
+		font-size: 25px
+	.fa-chevron-right
+		left: 51%
+	.fa-chevron-left
+		left: 49%
+
+			
 .logos
 	max-width: 296px
 	img
@@ -34,5 +69,218 @@ p
 	display: flex
 	align-items: center
 header
-	height: 100vh
+	// height: 100vh
+	// overflow-x: hidden 
+	padding-top: 250px
+	padding-bottom: 350px
 	background: url(../img/head-bg-1.png) no-repeat 50% 50%/cover
+	.container
+		position: relative
+	h1
+		color: #ffffff
+		font-family: "BebasNeueBold"
+		font-size: 72px
+		// font-weight: bold
+		// margin-top: 200px
+		line-height: 90px
+		text-transform: uppercase
+		margin-bottom: 45px
+	h5
+		margin: 0
+		padding: 0
+		color: #ffffff
+		font-family: 'Montserrat-Bold'
+		font-size: 21px
+		// font-weight: bold
+		padding: 12px 0px
+		text-transform: uppercase
+		background-color: #21778c
+		width: 330px
+		text-align: center
+		transform: skewX(-25deg)
+		// z-index: 999
+		// position: relative
+		span
+			display: block
+			transform: skewX(25deg)
+
+
+.top_head
+	padding: 15px 0px
+	background-color: #ffffff
+	opacity: 0.88
+.offer-menu
+	z-index: 99
+	position: absolute
+	top: 0
+	width: 100%
+	left: 0
+	right: 0	
+.feadback_info
+	.fead-address
+		border-left: 3px solid #000000
+		padding-left: 15px
+		color: #000000
+		font-family: 'Montserrat-Regular'
+		font-size: 12px
+		p
+			&:first-child
+				margin-bottom: 10px
+		span
+			font-family: 'Montserrat-Bold'
+	.fead-phone
+		margin-left: 50px
+		.order
+			text-align: right
+			display: block
+			color: #ffffff
+			font-family: 'Montserrat-Bold'
+			background-color: #21778c
+			font-size: 10px
+			font-weight: 700
+			text-align: center
+			text-decoration: none
+			padding: 7px 15px
+			float: right
+		.fead-phone_img
+			a
+				color: #000000
+				font-family: 'BebasNeueBold'
+				text-decoration: none
+				font-size: 35px
+				font-weight: 400
+				margin-left: 5px
+.head-menu
+	background-color: #000000
+	opacity: 0.73
+	padding: 14px 0px
+	nav
+		margin: 0
+		padding: 0
+		display: block
+		margin: 0 auto
+		text-align: center
+		ul
+			list-style: none
+			padding: 0
+			margin: 0
+			display: flex
+			justify-content: center
+			li
+				border-right: 1px solid #fff
+				padding-right: 60px
+				padding-left: 60px
+				&:last-child
+					border: 0 
+				a
+					text-decoration: none
+					display: block
+					color: #ffffff
+					font-family: "BebasNeueBook"
+					font-size: 24px
+					font-weight: 400
+					text-transform: uppercase
+					line-height: 18px
+.pict_block
+	width: 350px
+	height: 350px
+	// position: absolute
+	border-radius: 50%
+	box-sizing: border-box
+	border: 5px solid #fff
+	padding: 15px
+	position: absolute
+	// bottom: 0px
+	right: 0
+	
+	.wh-pict_block
+		background: transparent
+		height: 100%
+		width: 100%
+		box-sizing: border-box
+		border-radius: 50%
+	.bl-pict_block
+		background: #000
+		height: 100%
+		width: 100%
+		border-radius: 50%
+		padding: 6px
+		box-sizing: border-box
+		.img-pict
+			// max-width: 100%
+			text-align: center
+			position: relative
+			overflow: hidden
+			box-sizing: border-box
+			img
+				max-width: 100%
+				// height: 100%
+				text-align: center
+				margin: 0 auto
+				border-radius: 50%		
+			p
+				position: absolute
+				top: 50%
+				left: 50%
+				// bottom: 50%
+				// right: 50%
+				width: 90%
+				transform: translate(-50%, -50%)
+				color: #ffffff
+				font-family: 'Montserrat-Bold'
+				font-size: 17px
+				// font-weight: bold
+				line-height: 27.48px
+
+#services
+	background: #fff
+	max-width: 1310px
+	margin: 0 auto
+	h3
+		margin: 0
+		padding: 0	
+		text-align: center
+		color: #010101
+		font-family: "BebasNeueRegular"
+		font-size: 43px
+		font-weight: bold
+		text-transform: uppercase
+		margin-bottom: 70px
+		&:after
+			padding: 0
+			// padding-top: 15px
+			content: ''
+			display: block
+			height: 5px
+			text-align: center
+			margin: 0 auto
+			width: 96px
+			background: #21778c
+			margin-top: 18px
+
+	.serv-cont
+		display: flex
+		justify-content: space-between
+		.serv-inf
+			h5
+				margin: 0
+				padding: 0
+				color: #000000
+				font-family: "BebasNeueBook"
+				font-size: 30px
+				// font-weight: 400
+				text-transform: uppercase
+			p
+				color: #000000
+				font-family: 'Montserrat-Regular'
+				font-size: 14px
+				font-weight: 400
+				line-height: 20px
+				margin-top: 30px
+		.serv-pict
+			display: flex
+			justify-content: space-between
+			.serv-pict-item
+				margin-left: 20px
+
+			

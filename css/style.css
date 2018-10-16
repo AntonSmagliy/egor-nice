@@ -13,13 +13,43 @@
 @font-face {
   font-family: "Montserrat-Bold";
   src: url("../fonts/Montserrat-Bold.eot") format("eot"), url("../fonts/Montserrat-Bold.ttf") format("truetype"); }
+body {
+  background-color: #ebebeb; }
+
 p {
   margin: 0; }
+
+* {
+  outline: none; }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table; }
 
 .container {
   width: 90%;
   max-width: 1220px;
   margin: 0 auto; }
+
+h1 {
+  margin: 0;
+  padding: 0; }
+
+.sliders {
+  overflow-x: hidden; }
+  .sliders i {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    z-index: 999;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    font-size: 25px; }
+  .sliders .fa-chevron-right {
+    left: 51%; }
+  .sliders .fa-chevron-left {
+    left: 49%; }
 
 .logos {
   max-width: 296px; }
@@ -46,7 +76,218 @@ p {
           align-items: center; }
 
 header {
-  height: 100vh;
+  padding-top: 250px;
+  padding-bottom: 350px;
   background: url(../img/head-bg-1.png) no-repeat 50% 50%/cover; }
+  header .container {
+    position: relative; }
+  header h1 {
+    color: #ffffff;
+    font-family: "BebasNeueBold";
+    font-size: 72px;
+    line-height: 90px;
+    text-transform: uppercase;
+    margin-bottom: 45px; }
+  header h5 {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-family: "Montserrat-Bold";
+    font-size: 21px;
+    padding: 12px 0px;
+    text-transform: uppercase;
+    background-color: #21778c;
+    width: 330px;
+    text-align: center;
+    -webkit-transform: skewX(-25deg);
+            transform: skewX(-25deg); }
+    header h5 span {
+      display: block;
+      -webkit-transform: skewX(25deg);
+              transform: skewX(25deg); }
+
+.top_head {
+  padding: 15px 0px;
+  background-color: #ffffff;
+  opacity: 0.88; }
+
+.offer-menu {
+  z-index: 99;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  right: 0; }
+
+.feadback_info .fead-address {
+  border-left: 3px solid #000000;
+  padding-left: 15px;
+  color: #000000;
+  font-family: "Montserrat-Regular";
+  font-size: 12px; }
+  .feadback_info .fead-address p:first-child {
+    margin-bottom: 10px; }
+  .feadback_info .fead-address span {
+    font-family: "Montserrat-Bold"; }
+.feadback_info .fead-phone {
+  margin-left: 50px; }
+  .feadback_info .fead-phone .order {
+    text-align: right;
+    display: block;
+    color: #ffffff;
+    font-family: "Montserrat-Bold";
+    background-color: #21778c;
+    font-size: 10px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    padding: 7px 15px;
+    float: right; }
+  .feadback_info .fead-phone .fead-phone_img a {
+    color: #000000;
+    font-family: "BebasNeueBold";
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 400;
+    margin-left: 5px; }
+
+.head-menu {
+  background-color: #000000;
+  opacity: 0.73;
+  padding: 14px 0px; }
+  .head-menu nav {
+    margin: 0;
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    text-align: center; }
+    .head-menu nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .head-menu nav ul li {
+        border-right: 1px solid #fff;
+        padding-right: 60px;
+        padding-left: 60px; }
+        .head-menu nav ul li:last-child {
+          border: 0; }
+        .head-menu nav ul li a {
+          text-decoration: none;
+          display: block;
+          color: #ffffff;
+          font-family: "BebasNeueBook";
+          font-size: 24px;
+          font-weight: 400;
+          text-transform: uppercase;
+          line-height: 18px; }
+
+.pict_block {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 5px solid #fff;
+  padding: 15px;
+  position: absolute;
+  right: 0; }
+  .pict_block .wh-pict_block {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 50%; }
+  .pict_block .bl-pict_block {
+    background: #000;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    padding: 6px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    .pict_block .bl-pict_block .img-pict {
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
+      .pict_block .bl-pict_block .img-pict img {
+        max-width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        border-radius: 50%; }
+      .pict_block .bl-pict_block .img-pict p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 90%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        color: #ffffff;
+        font-family: "Montserrat-Bold";
+        font-size: 17px;
+        line-height: 27.48px; }
+
+#services {
+  background: #fff;
+  max-width: 1310px;
+  margin: 0 auto; }
+  #services h3 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #010101;
+    font-family: "BebasNeueRegular";
+    font-size: 43px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 70px; }
+    #services h3:after {
+      padding: 0;
+      content: "";
+      display: block;
+      height: 5px;
+      text-align: center;
+      margin: 0 auto;
+      width: 96px;
+      background: #21778c;
+      margin-top: 18px; }
+  #services .serv-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    #services .serv-cont .serv-inf h5 {
+      margin: 0;
+      padding: 0;
+      color: #000000;
+      font-family: "BebasNeueBook";
+      font-size: 30px;
+      text-transform: uppercase; }
+    #services .serv-cont .serv-inf p {
+      color: #000000;
+      font-family: "Montserrat-Regular";
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      margin-top: 30px; }
+    #services .serv-cont .serv-pict {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      #services .serv-cont .serv-pict .serv-pict-item {
+        margin-left: 20px; }
 
 /*# sourceMappingURL=style.css.map */
