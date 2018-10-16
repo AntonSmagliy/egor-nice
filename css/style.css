@@ -13,9 +13,40 @@
 @font-face {
   font-family: "Montserrat-Bold";
   src: url("../fonts/Montserrat-Bold.eot") format("eot"), url("../fonts/Montserrat-Bold.ttf") format("truetype"); }
+p {
+  margin: 0; }
+
 .container {
   width: 90%;
   max-width: 1220px;
   margin: 0 auto; }
+
+.logos {
+  max-width: 296px; }
+  .logos img {
+    max-width: 100%; }
+
+.wrap-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.feadback_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+header {
+  height: 100vh;
+  background: url(../img/head-bg-1.png) no-repeat 50% 50%/cover; }
 
 /*# sourceMappingURL=style.css.map */
