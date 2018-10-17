@@ -53,14 +53,14 @@ h1
 	overflow-x: hidden
 	i
 		position: absolute
-		bottom: 50px
+		bottom: 30px
 		left: 50%
 		z-index: 999
 		transform: translate(-50%)
-		font-size: 25px
-	.fa-chevron-right
+		font-size: 31px
+	.fa-angle-right
 		left: 51%
-	.fa-chevron-left
+	.fa-angle-left
 		left: 49%
 
 
@@ -888,10 +888,10 @@ header
 		position: static
 	.pict_block .bl-pict_block .img-pict p
 		font-size: 12px
-	.sliders .fa-chevron-left
+	.sliders .fa-angle-left
 		left: 45%
 		bottom: 10px
-	.sliders .fa-chevron-right
+	.sliders .fa-angle-right
 		right: 55%
 		bottom: 10px
 	header h5
@@ -917,6 +917,13 @@ header
 		margin-left: 0px
 		width: 300px
 		// justify-content: center
+@media all and (max-width:750px)
+	.sliders i
+		bottom: 0px
+	.sliders .fa-angle-right
+		left: 55%
+	.sliders .fa-angle-left
+		left: 45%
 @media all and (max-width:710px)
 	#services .serv-cont .serv-pict
 		flex-direction: column

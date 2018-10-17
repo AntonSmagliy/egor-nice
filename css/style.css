@@ -49,15 +49,15 @@ h1 {
   overflow-x: hidden; }
   .sliders i {
     position: absolute;
-    bottom: 50px;
+    bottom: 30px;
     left: 50%;
     z-index: 999;
     -webkit-transform: translate(-50%);
             transform: translate(-50%);
-    font-size: 25px; }
-  .sliders .fa-chevron-right {
+    font-size: 31px; }
+  .sliders .fa-angle-right {
     left: 51%; }
-  .sliders .fa-chevron-left {
+  .sliders .fa-angle-left {
     left: 49%; }
 
 footer .top-line {
@@ -983,11 +983,11 @@ header {
   .pict_block .bl-pict_block .img-pict p {
     font-size: 12px; }
 
-  .sliders .fa-chevron-left {
+  .sliders .fa-angle-left {
     left: 45%;
     bottom: 10px; }
 
-  .sliders .fa-chevron-right {
+  .sliders .fa-angle-right {
     right: 55%;
     bottom: 10px; }
 
@@ -1019,6 +1019,15 @@ header {
   #services .serv-cont .serv-pict .serv-pict-item {
     margin-left: 0px;
     width: 300px; } }
+@media all and (max-width: 750px) {
+  .sliders i {
+    bottom: 0px; }
+
+  .sliders .fa-angle-right {
+    left: 55%; }
+
+  .sliders .fa-angle-left {
+    left: 45%; } }
 @media all and (max-width: 710px) {
   #services .serv-cont .serv-pict {
     -webkit-box-orient: vertical;
