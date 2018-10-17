@@ -14,7 +14,8 @@
   font-family: "Montserrat-Bold";
   src: url("../fonts/Montserrat-Bold.eot") format("eot"), url("../fonts/Montserrat-Bold.ttf") format("truetype"); }
 body {
-  background-color: #ebebeb; }
+  background-color: #ebebeb;
+  overflow-x: hidden; }
 
 p {
   margin: 0; }
@@ -253,9 +254,11 @@ footer .top-line {
           align-items: center; }
 
 header {
+  z-index: 66;
   padding-top: 250px;
   padding-bottom: 350px;
-  background: url(../img/head-bg-1.png) no-repeat 50% 50%/cover; }
+  position: relative;
+  background: url(../img/un1.png) no-repeat 34% 50%/cover, #fff; }
   header .container {
     position: relative; }
   header h1 {
@@ -413,9 +416,22 @@ header {
         line-height: 27.48px; }
 
 #services {
+  z-index: 55;
   background: #fff;
   max-width: 1310px;
-  margin: 0 auto; }
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 110px;
+  padding-top: 50px;
+  position: relative; }
+  #services:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    width: 0;
+    z-index: -99;
+    border-top: 200px solid #fff;
+    border-left: 100vw solid transparent; }
   #services h3 {
     margin: 0;
     padding: 0;
@@ -443,6 +459,17 @@ header {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+    #services .serv-cont .serv-inf a {
+      color: #ffffff;
+      font-family: "Montserrat-Bold";
+      font-size: 14px;
+      background-color: #21778c;
+      text-decoration: none;
+      padding: 12px 0px;
+      text-align: center;
+      margin-top: 55px;
+      display: block;
+      width: 150px; }
     #services .serv-cont .serv-inf h5 {
       margin: 0;
       padding: 0;
@@ -456,7 +483,8 @@ header {
       font-size: 14px;
       font-weight: 400;
       line-height: 20px;
-      margin-top: 30px; }
+      margin-top: 30px;
+      min-width: 318px; }
     #services .serv-cont .serv-pict {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -465,6 +493,25 @@ header {
           -ms-flex-pack: justify;
               justify-content: space-between; }
       #services .serv-cont .serv-pict .serv-pict-item {
-        margin-left: 20px; }
+        margin-left: 19px; }
+        #services .serv-cont .serv-pict .serv-pict-item .pict-item-img {
+          position: relative;
+          margin-bottom: 20px; }
+          #services .serv-cont .serv-pict .serv-pict-item .pict-item-img:after {
+            content: "";
+            display: block;
+            width: 117px;
+            position: absolute;
+            bottom: 0;
+            height: 5px;
+            background: #21778c; }
+        #services .serv-cont .serv-pict .serv-pict-item h6 {
+          color: #000000;
+          font-family: "BebasNeueBold";
+          font-size: 26px;
+          font-weight: 400;
+          text-transform: uppercase;
+          margin: 0;
+          width: 60%; }
 
 /*# sourceMappingURL=style.css.map */
