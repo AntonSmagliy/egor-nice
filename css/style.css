@@ -653,14 +653,6 @@ header {
   padding-bottom: 110px;
   padding-top: 50px;
   position: relative; }
-  #services:before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    width: 0;
-    z-index: -99;
-    border-top: 200px solid #fff;
-    border-left: 100vw solid transparent; }
   #services h3 {
     margin: 0;
     padding: 0;
