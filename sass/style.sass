@@ -18,6 +18,7 @@
 	display: none
 body
 	background-color: #ebebeb
+	overflow-x: hidden
 p
 	margin: 0
 *
@@ -407,10 +408,29 @@ footer
 	align-items: center
 header
 	// height: 100vh
+
+	// overflow-x: hidden 
+	z-index: 66
+
 	// overflow-x: hidden
+
 	padding-top: 250px
 	padding-bottom: 350px
-	background: url(../img/head-bg-1.png) no-repeat 50% 50%/cover
+	position: relative
+	// background-attachment: fixed
+	background: url(../img/un1.png) no-repeat 34% 50%/cover, #fff
+	// &:after
+	// 	content: ''
+	// 	position: absolute
+	// 	// top: 0px
+	// 	bottom: 15px
+	// 	z-index: -55
+	// 	width: 0
+	// 	height: 0
+	// 	border-top: 50px solid #fff
+	// 	border-right: 100vw solid transparent 
+
+    
 	.container
 		position: relative
 	h1
@@ -569,10 +589,27 @@ header
 				// font-weight: bold
 				line-height: 27.48px
 
+
 #services
+	z-index: 55
 	background: #fff
 	max-width: 1310px
+	width: 95%
 	margin: 0 auto
+	padding-bottom: 110px
+	padding-top: 50px
+	position: relative
+	// margin-top: -150px
+	// z-index: -20
+	&:before
+		content: ''
+		position: absolute
+		top: 0px
+		width: 0
+		// height: 1100px
+		z-index: -99
+		border-top: 200px solid #fff
+		border-left: 100vw solid transparent
 	h3
 		margin: 0
 		padding: 0
@@ -599,6 +636,19 @@ header
 		display: flex
 		justify-content: space-between
 		.serv-inf
+			a
+				color: #ffffff
+				font-family: "Montserrat-Bold"
+				font-size: 14px
+				// font-weight: bold
+				background-color: #21778c
+				text-decoration: none
+				padding: 12px 0px
+				text-align: center
+				margin-top: 55px
+				display: block
+				width: 150px
+				
 			h5
 				margin: 0
 				padding: 0
@@ -614,11 +664,34 @@ header
 				font-weight: 400
 				line-height: 20px
 				margin-top: 30px
+				min-width: 318px
 		.serv-pict
 			display: flex
 			justify-content: space-between
 			.serv-pict-item
-				margin-left: 20px
+				margin-left: 19px
+				.pict-item-img
+					position: relative
+					margin-bottom: 20px
+					&:after
+						content: ""
+						display: block
+						width: 117px
+						position: absolute
+						bottom: 0
+						height: 5px
+						background: #21778c
+				h6
+					// margin-top: 20px
+					color: #000000
+					font-family: "BebasNeueBold"
+					font-size: 26px
+					font-weight: 400
+					text-transform: uppercase
+					margin: 0
+					width: 60%
+
+
 
 
 //----------media--------------
