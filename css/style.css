@@ -662,7 +662,8 @@ header {
           box-sizing: border-box;
   padding-bottom: 110px;
   padding-top: 50px;
-  position: relative; }
+  position: relative;
+  overflow-x: hidden; }
   #services h3 {
     margin: 0;
     padding: 0;
