@@ -199,6 +199,9 @@ footer .top-line {
       .bot-line .bot-line_container .qvant p {
         margin-right: 10px; }
 
+.our-wrok_cornt {
+  background-color: white; }
+
 .our-work {
   padding-bottom: 46px;
   padding-top: 46px; }
@@ -240,8 +243,7 @@ footer .top-line {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  margin: 100px 0px; }
+  display: flex; }
   .for-many .for-many_left {
     color: #000000;
     font-family: "Montserrat-Regular", sans-serif;
@@ -293,7 +295,7 @@ footer .top-line {
       margin-right: 40px; }
   .about .container_about {
     width: 95%;
-    max-width: 1310px;
+    max-width: 1220px;
     margin: 0 auto;
     background-color: #ffffff;
     padding: 0px 45px;
@@ -644,6 +646,10 @@ header {
         font-size: 17px;
         line-height: 27.48px; }
 
+.for-mane_sect {
+  background-color: white;
+  padding: 100px 0px; }
+
 #services {
   z-index: 55;
   background: #fff;
@@ -898,5 +904,3 @@ header {
     padding-left: 10px;
     padding-right: 10px;
     font-size: 13px; } }
-
-/*# sourceMappingURL=style.css.map */
