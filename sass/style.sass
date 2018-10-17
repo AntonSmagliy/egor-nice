@@ -49,7 +49,7 @@ h1
 	overflow-x: hidden
 	i
 		position: absolute
-		bottom: 30px
+		bottom: 50px
 		left: 50%
 		z-index: 999
 		transform: translate(-50%)
@@ -230,11 +230,23 @@ footer
 			li
 				list-style-image: url(../img/galk.png)
 	.for-many_right
+
 		.right_video
 			width: 587px
 			background-color: #21778c
 			height: 411px
-
+// .video
+// 	position:relative
+// 	padding-bottom:56.25%
+// 	padding-top:25px
+// 	height:0
+// .video
+// 	iframe
+// 		position:absolute
+// 		top:0
+// 		left:0
+// 		width:100%
+// 		height:100%
 .about
 	padding-top: 70px
 	padding-bottom: 365px
@@ -268,7 +280,6 @@ footer
 		width: 95%
 		max-width: 1220px
 		margin: 0 auto
-		box-sizing: border-box
 		background-color: #ffffff
 		padding: 0px 45px
 		padding-top: 70px
@@ -602,7 +613,6 @@ header
 	max-width: 1310px
 	width: 95%
 	margin: 0 auto
-	box-sizing: border-box
 	padding-bottom: 110px
 	padding-top: 50px
 	position: relative
@@ -671,7 +681,7 @@ header
 				font-weight: 400
 				line-height: 20px
 				margin-top: 30px
-				max-width: 290px
+				min-width: 318px
 		.serv-pict
 			display: flex
 			justify-content: space-between
@@ -680,8 +690,6 @@ header
 				.pict-item-img
 					position: relative
 					margin-bottom: 20px
-					img
-						// max-width: 100%
 					&:after
 						content: ""
 						display: block
@@ -719,25 +727,25 @@ header
 			max-width: 286px
 			max-height: 195px
 			margin-bottom: 15px
-@media all and (max-width:1250px)
-	#services .serv-cont
-		flex-direction: column
-	#services .serv-cont .serv-inf p
-		width: 100%
-		max-width: none
-	#services .serv-cont .serv-inf a
-		margin-bottom: 25px
-	#services .serv-cont .serv-pict .serv-pict-item
-		&:first-child
-			margin-left: 0
 @media all and (max-width:1200px)
 	.for-many
 		flex-direction: column-reverse
 		align-items: center
-	.for-many .for-many_right .right_video
-		width: 95%
-		max-width: 587px
-		margin-bottom: 15px
+	// .for-many .for-many_right .right_video
+	// 	width: 95%
+	// 	max-width: 587px
+	// 	margin-bottom: 15px
+	// .for-many_right
+	// 	position: relative
+	// 	padding-bottom: 56.25%
+	// 	padding-top: 0px
+	// 	height: 0
+	// 	iframe
+	// 		position: absolute
+	// 		top: 0
+	// 		left: 0
+	// 		width: 100%
+	// 		height: 100%
 	.for-many_right
 		display: flex
 		justify-content: center
@@ -774,34 +782,6 @@ header
 		margin-top: 15px
 	.about .container_about .about_info h3
 		text-align: center
-@media all and (max-width:992px)
-	#services .serv-cont .serv-pict
-		flex-wrap: wrap
-		justify-content: center
-	#services .serv-cont .serv-pict .serv-pict-item .pict-item-img img
-		margin: 0 auto
-		text-align: center
-	#services .serv-cont .serv-pict .serv-pict-item
-		margin-left: 0px
-		width: 300px
-		// justify-content: center
-@media all and (max-width:710px)
-	#services .serv-cont .serv-pict
-		flex-direction: column
-		align-items: center
-	#services .serv-cont .serv-pict .serv-pict-item .pict-item-img
-		text-align: center
-	#services .serv-cont .serv-pict .serv-pict-item h6
-		text-align: center
-		width: 100%
-	#services .serv-cont .serv-pict .serv-pict-item .pict-item-img:after
-		left: 50%
-		transform: translate(-50%)
-		bottom: -15px
-	#services .serv-cont .serv-pict .serv-pict-item
-		margin-bottom: 15px
-	#services
-		padding-bottom: 50px
 @media all and (max-width:940px)
 	.top-line_wrapp
 		flex-direction: column
@@ -821,7 +801,12 @@ header
 		margin-bottom: 20px
 	.qvant
 		margin-bottom: 20px
+@media all and (max-width:650px)
+	.for-many .for-many_right .right_video
+		height: 330px
 @media all and (max-width:500px)
+	.for-many .for-many_right .right_video
+		height: 250px
 	.container_about
 		width: 100%!important
 	.about .container_about .about_images .div_image1
@@ -849,6 +834,6 @@ header
 		padding-left: 10px
 		padding-right: 10px
 		font-size: 13px
-@media all and (max-width:390px)
-	#services .serv-cont .serv-pict .serv-pict-item
-		width: 100%
+@media all and (max-width:400px)
+	.for-many .for-many_right .right_video
+		height: 200px
