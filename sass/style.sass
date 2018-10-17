@@ -106,7 +106,7 @@ footer
 			flex-wrap: wrap
 			justify-content: flex-end
 			i
-				font-size: 30px
+				font-size: 23px
 				color: #7a979e
 			p
 				color: #ffffff
@@ -701,6 +701,8 @@ header
 
 //----------media--------------
 @media all and (max-width:1350px)
+	#services .serv-cont .serv-inf p
+		min-width: 270px
 	.about .container_about .about_images .div_image1
 		width: 45%
 	.about .container_about .about_images .div_image2
@@ -724,6 +726,7 @@ header
 	.for-many_right
 		display: flex
 		justify-content: center
+		width: 100%
 @media all and (max-width:1150px)
 	.advant
 		background-image: none
@@ -776,6 +779,12 @@ header
 	.qvant
 		margin-bottom: 20px
 @media all and (max-width:500px)
+	.container_about
+		width: 100%!important
+	.about .container_about .about_images .div_image1
+		padding-left: 0px
+	.about .container_about .about_images .div_image2
+		padding-left: 0px
 	.about .container_about .about_info .wrapper .info_text
 		width: auto
 		padding: 5px
