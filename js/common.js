@@ -8,11 +8,13 @@ $(document).ready(function(){
 	$('#overlay').css('display', 'block');
 	$('nav').addClass('dbbl');
 	$('body').css('overflow', 'hidden');
+	$('html').css('overflow', 'hidden');
   });
   $('#overlay').click(function(e){
   	$('nav').removeClass('dbbl');
   	$(this).css('display', 'none');
   	$('body').css('overflow', 'auto');
+  	$('html').css('overflow', 'auto');
   });
 });
 	
