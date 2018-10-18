@@ -120,8 +120,9 @@ footer .top-line {
         -ms-flex-pack: end;
             justify-content: flex-end; }
     footer .top-line .foot_info i {
-      font-size: 26px;
-      color: #7a979e; }
+      font-size: 24px;
+      color: #7a979e;
+      margin-right: 5px; }
     footer .top-line .foot_info p {
       color: #ffffff;
       font-family: "Montserrat-Bold", sans-serif;
@@ -406,6 +407,7 @@ footer .top-line {
       font-size: 30px;
       font-weight: 400;
       line-height: 18px;
+      margin-top: 45px;
       margin-bottom: 35px; }
     .about .container_about .about_info .wrapper {
       display: -webkit-box;
@@ -432,6 +434,7 @@ footer .top-line {
   background-image: url(../img/frex-verst.png);
   padding-top: 98px;
   padding-bottom: 96px;
+  margin-top: 60px;
   background-color: rgba(0, 0, 0, 0.71); }
   .advant h2 {
     color: #ffffff;
@@ -638,7 +641,7 @@ header {
   border: 5px solid #fff;
   padding: 15px;
   position: absolute;
-  right: 0; }
+  right: -20px; }
   .pict_block .wh-pict_block {
     background: transparent;
     height: 100%;
@@ -821,6 +824,9 @@ header {
     width: 100%;
     margin-bottom: 15px; } }
 @media all and (max-width: 1150px) {
+  #services:before {
+    display: none; }
+
   .advant {
     background-image: none;
     background-color: white; }
@@ -963,10 +969,10 @@ header {
     width: 100% !important; }
 
   .about .container_about .about_images .div_image1 {
-    padding-left: 0px; }
+    padding-left: 10px; }
 
   .about .container_about .about_images .div_image2 {
-    padding-left: 0px; }
+    padding-left: 10px; }
 
   .about .container_about .about_info .wrapper .info_text {
     width: auto;
