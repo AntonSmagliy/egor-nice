@@ -91,6 +91,11 @@ footer
 			p
 				display: flex
 				align-items: center
+				color: #ffffff
+				font-family: 'Montserrat-Bold', sans-serif
+				font-size: 15px
+				font-weight: 700
+				line-height: 18px
 				img
 					margin-right: 15px
 			ul
@@ -115,7 +120,7 @@ footer
 			flex-wrap: wrap
 			justify-content: flex-end
 			i
-				font-size: 23px
+				font-size: 26px
 				color: #7a979e
 			p
 				color: #ffffff
@@ -202,6 +207,7 @@ footer
 		text-transform: uppercase
 		text-align: center
 		margin: 0
+		margin-bottom: 17px
 	.work-line
 		width: 96px
 		height: 5px
@@ -485,7 +491,18 @@ header
 		span
 			display: block
 			transform: skewX(25deg)
-
+.map
+	width: 100%
+	background-color: white
+	h2
+		color: #20273a
+		font-family: 'BebasNeueBook', sans-serif
+		font-size: 30px
+		font-weight: bold
+		text-transform: uppercase
+		text-align: center
+		margin: 0
+		margin-bottom: 42px
 
 .top_head
 	padding: 15px 0px
@@ -796,9 +813,36 @@ header
 	.about .container_about .about_info h3
 		text-align: center
 @media all and (max-width:940px)
+	footer .top-line .foot_uls ul
+		width: auto
+	footer .top-line .foot_info .adr
+		width: auto
+		span
+			width: auto
+			margin-left: 0
+		i
+			margin-right: 20px
+	footer .top-line .foot_info .conts
+		width: auto
+		span
+			width: auto
+			margin-left: 0
+		i
+			margin-right: 13px
+	footer .top-line .foot_info .foot_email
+		width: auto
+		span
+			width: auto
+			margin-left: 0
+		i
+			margin-right: 10px
+	footer .top-line .foot_uls p img
+		height: 20px
+		width: 20px
+
 	.top-line_wrapp
 		flex-direction: column
-		align-items: center
+		align-items: flex-start
 	footer .top-line .foot_info
 		justify-content: flex-start
 		flex-wrap: nowrap
@@ -806,6 +850,10 @@ header
 		// align-items: center
 		width: auto
 @media all and (max-width:870px)
+	footer .top-line .top_arrow img
+		margin-top: 15px
+	.bot-line
+		padding-top: 15px
 	.bot-line .bot-line_container
 		flex-direction: column
 	.copyright
