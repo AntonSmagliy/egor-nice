@@ -604,8 +604,7 @@ header {
     padding: 0;
     display: block;
     margin: 0 auto;
-    text-align: center;
-    z-index: 9995; }
+    text-align: center; }
     .head-menu nav ul {
       list-style: none;
       padding: 0;
@@ -616,12 +615,12 @@ header {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      z-index: 9999; }
+      z-index: 100; }
       .head-menu nav ul li {
         border-right: 1px solid #fff;
         padding-right: 60px;
         padding-left: 60px;
-        z-index: 99999; }
+        z-index: 101; }
         .head-menu nav ul li:last-child {
           border: 0; }
         .head-menu nav ul li a {
@@ -1171,7 +1170,7 @@ header {
   display: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  z-index: 999;
+  z-index: 70;
   overflow: hidden; }
 
 /*# sourceMappingURL=style.css.map */
