@@ -17,8 +17,7 @@
   display: none; }
 
 .ovrlhdn {
-  overflow: hidden !important;
-  -webkit-overflow-scrolling: touch; }
+  overflow: hidden !important; }
 
 .dbbl {
   display: block !important; }

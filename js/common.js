@@ -16,12 +16,14 @@ $(document).ready(function(){
   $('nav').toggleClass('dbbl');
   $('body').toggleClass('ovrlhdn');
   $('.of_wrap').toggleClass('ovrlhdn');
+   $('html').toggleClass('ovrlhdn');
   });
   $('#overlay').click(function(e){
   	$('nav').toggleClass('dbbl');
   	$(this).toggleClass('dbbl');
   	$('body').toggleClass('ovrlhdn');
   	$('.of_wrap').toggleClass('ovrlhdn');
+  $('html').toggleClass('ovrlhdn');
   });
 
 $("nav ul li").on("click","a", function (event) {
@@ -38,6 +40,7 @@ $("nav ul li").on("click","a", function (event) {
     $('#overlay').toggleClass('dbbl');
     $('body').toggleClass('ovrlhdn');
     $('.of_wrap').toggleClass('ovrlhdn');
+      $('html').toggleClass('ovrlhdn');
     }
     //анимируем переход на расстояние - top за 1500 мс
     $('body,html').animate({scrollTop: top}, 1500);
