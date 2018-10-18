@@ -14,7 +14,8 @@ $(document).ready(function(){
   	$('nav').removeClass('dbbl');
   	$(this).css('display', 'none');
   	$('body').css('overflow', 'auto');
-  	$('of_wrap').css('overflow', 'auto');
+  	$('.of_wrap').css('overflow', 'auto');
   });
+  	
 });
 	
