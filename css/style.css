@@ -16,6 +16,10 @@
 .none {
   display: none; }
 
+.ovrlhdn {
+  overflow: hidden !important;
+  -webkit-overflow-scrolling: touch; }
+
 .dbbl {
   display: block !important; }
 
@@ -808,17 +812,22 @@ header {
     flex-direction: column;
     justify-content: space-between;
     position: fixed;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 999; }
 
   .head-menu nav ul li {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     display: block;
     border: none;
     z-index: 9999;
     padding: 0; }
+
+  .head-menu nav ul li a {
+    font-size: 19px;
+    line-height: 22px;
+    font-family: "Montserrat-Bold"; }
 
   .head-menu nav {
     display: none; }
@@ -922,7 +931,7 @@ header {
   width: 100%;
   height: 100%;
   background-color: black;
-  opacity: 0.8;
+  opacity: 0.95;
   position: fixed;
   z-index: 9;
   display: none;
